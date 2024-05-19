@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Iniciar sesión</title>
+</head>
+<body>
+    <header class="cabecera">
+        <nav class="cabecera-logo">
+            <a href="./index.html"><img src="../\image\LOGO-ULEAM-HORIZONTAL.png" alt="logo" class="imagen-logo"></a>
+        </nav>
+        <div class="center-container"><h1 class="titulo">Sistema de entrada y salida de vehículos</h1></div>
+        <nav class="cabecera-opciones">
+            <ul class="cabecera-opciones-lista">
+                <button class="registro-btn"><a id="registro-btn" href="./registroUsuario.html">Registro</a></button>
+            </ul>
+            <ul class="cabecera-opciones-lista">
+              <button class="admin-btn"><a id="admin-btn" href="./inicioSesionAdministrador.html">Inicio de sesión de Administración</a></button>
+          </ul>
+        </nav>
+    </header>
+    <!-- contenido -->
+    <main class="contenedor-medio" id="contenedor-medio">
+        <section class="panel">
+            <div class="panel-login">
+                <img class="hero-logo" src="../image/logo2.jpg" alt="hero de uleam">
+                <h2>Administración</h2>
+                <form id="login-form">
+                    <div>
+                        <label for="usuario">Usuario:</label>
+                        <input type="text" id="usuario" name="usuario" required>
+                    </div>
+                    <div>
+                        <label for="contrasena">Contraseña:</label>
+                        <input type="password" id="contrasena" name="contrasena" required>
+                    </div>
+                    <button type="submit">Iniciar Sesión</button>
+                </form>
+                <button id="boton-login">Iniciar sesión como usuario</button>
+            </div>
+        </section>
+
+    </main>
+    <!-- links y redes -->
+    <footer class="contenedor-abajo">
+        <div class="contenido-abajo">
+            <h3 class="contenido-texto">
+                © 2024 Universidad Laica Eloy Alfaro de Manabí - Jeremias G. 
+            </h3>
+        </div>
+    </footer>
+    <script src="../javascript/loginAdmin.js"></script>
+</body>
+</html>
